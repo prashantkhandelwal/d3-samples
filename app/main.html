@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular CSV Import</title>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+div.bar {
+				display: inline-block;
+				width: 20px;
+				height: 75px;	/* Gets overriden by D3-assigned height below */
+				margin-right: 2px;
+				background-color: teal;
+			}
+
+path {
+				stroke: steelblue;
+				stroke-width: 3;
+				fill: none;
+			}
+
+</style>
+   </head>
+  <body ng-app="d3csvjsonApp">
+
+<div ng-controller="d3Ctrl">
+<div class="data"></div>
+<div id="spark"></div>
+</div>
+
+   
+<!--<div ng-controller="mainCtrl">
+
+    <div class="container">
+<ng-csv-import 
+		class="import"
+		content="csv.content"
+		header="csv.header" 
+		separator="csv.separator"
+		result="csv.result"></ng-csv-import>
+    </div>
+
+<svg class="chart"></svg>
+
+<div class="data"></div>
+
+<div>{{toPrettyJSON(csv.result, 2)}}</div>-->
+
+    <script src="../libs/jquery/dist/jquery.js"></script>
+    <script src="../libs/angular/angular.js"></script>
+    <script src="../libs/d3/d3.min.js"></script>
+    <script src="../libs/angular-csv-import/dist/angular-csv-import.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers/mainController.js"></script>
+        <script src="controllers/d3Controller.js"></script>
+</div>
+</body>
+</html>

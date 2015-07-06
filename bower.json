@@ -1,0 +1,23 @@
+{
+  "name": "d3-csvjson",
+  "version": "1.0.0",
+  "homepage": "https://github.com/prashantkhandelwal/d3-CSVJSON",
+  "authors": [
+    "Prashant Khandelwal <prashant@midnightprogrammer.net>"
+  ],
+  "description": "Visualizing CSV/JSON data with d3",
+  "keywords": [
+    "d3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "libs"
+  ],
+  "dependencies": {
+    "angular-csv-import": "~0.0.16",
+    "angular": "~1.4.1",
+    "d3": "~3.5.6",
+    "jquery": "~2.1.4"
+  }
+}
